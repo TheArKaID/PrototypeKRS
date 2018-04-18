@@ -7,7 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid x:Name="gridLogin" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="AliceBlue" HorizontalAlignment="Left" Height="98" Margin="10,0,0,0" VerticalAlignment="Top" Width="1270">
+            <TextBlock TextAlignment="Center" FontSize="40" HorizontalAlignment="Left" Margin="420,10,0,-7" Text="LOGIN" TextWrapping="Wrap" VerticalAlignment="Top" Height="95" Width="470"/>
+        </Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="602,184,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="140"/>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Margin="602,342,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="127"/>
+        <TextBox x:Name="tbUsername" FontSize="30" HorizontalAlignment="Left" Margin="561,247,0,0" Text="" VerticalAlignment="Top" Height="45" Width="212" Padding="5,0,5,0"/>
+        <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" Margin="561,408,0,0" VerticalAlignment="Top" Height="43" Width="212" Padding="5,0,5,0"/>
+        <Button x:Name="btLogin" FontSize="30" Content="Login" HorizontalAlignment="Left" Margin="602,498,0,0" VerticalAlignment="Top" Height="66" Width="124" Click="btLogin_Click"/>
+        <TextBlock x:Name="tbNotice" HorizontalAlignment="Left" Margin="561,144,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="41"/>
     </Grid>
 </Page>
